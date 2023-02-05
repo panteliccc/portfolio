@@ -84,8 +84,57 @@ html {
   color: var(--dark-grey);
   cursor: pointer;
 }
-.projects {
+.projects{
   background: var(--dark-blue);
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects .row{
+  padding :0 10% ;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.projects .project-heading {
+  text-align: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  color: var(--light-grey);
+  letter-spacing: 5px;
+}
+.projects .card {
+  width: 30%;
+  background-color: var(--dark-grey);
+  text-align: center;
+  color: var(--light-grey);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.projects .card h1 {
+  font-size: 150%;
+  text-transform: capitalize;
+}
+.projects .col {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.projects .card .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.projects .card .links a img {
+  width: 50px;
+}
+.projects .card .banner{
+  width: 100%;
+  border-top-right-radius:10px ;
+  border-top-left-radius:10px ;
 }
 @media screen and (max-width:1100px) {
 
@@ -98,9 +147,15 @@ html {
   .about {
     padding: 3% 15%;
   }
+  .projects .row {
+    padding: 0 5%;
+  }
+  .projects .card {
+    width: 47%;
+  }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
   .header h1{
     font-size: 30px;
   }
@@ -109,5 +164,8 @@ html {
   }
   .about {
     padding: 3% 5%;
+  }
+  .projects .card {
+    width: 100%;
   }
 }
