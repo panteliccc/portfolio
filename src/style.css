@@ -136,6 +136,23 @@ html {
   border-top-right-radius:10px ;
   border-top-left-radius:10px ;
 }
+.skill {
+  background-color: var(--dark-grey);
+  display: flex;  flex-wrap: wrap;
+}
+.skill .card{
+  width: 30%;
+  background-color: var(--dark-blue);
+  padding: 1.65%;
+  text-align: center;
+
+}
+.skill .card:nth-child(odd) {
+  background-color: transparent;
+}
+.skill img {
+  width: 30%;
+}
 @media screen and (max-width:1100px) {
 
   .header h1{
@@ -167,5 +184,15 @@ html {
   }
   .projects .card {
     width: 100%;
+  }
+  .skill .card {
+    width: 40%;
+    padding: 5%;
+  }
+  .skill .card:nth-child(odd) {
+    background-color: var(--dark-blue);
+  }
+  .skill .card.o {
+    background-color: transparent;
   }
 }
